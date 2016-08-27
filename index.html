@@ -1,75 +1,49 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>מג'יק דוג</title>
-	<meta charset="UTF-8">
-    <style>
-        html {
-            direction: rtl;
-            margin: 0px;
-            border: 0px;
-            padding: 0px;
-        }
-        
-        body {
-            margin: 0px;
-            border: 0px;
-            padding: 0px;
-        }
-        
-        .main-title {
-            font-size: 100;
-            color: black;
-            background: black;
-            font-family: Arimo;
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-            background-image: url(./images/Uber-Puppies.jpg);
-        }
-
-        .submain-title {
-            font-size: 80;
-        }
-        
-        .center {
-            font-size: 75;
-            color: black;
-            font-family: Assistant;
-            text-align: center;
-            margin: 30px;
-        }
-        
-        .footer {
-            position: fixed;
-            left: 0px;
-            bottom: 0px;
-            height: 40px;
-            width: 100%;
-            border-top-style: solid;
-            border-top-color: black;
-            text-align: center;
-            border-width: 1px;
-            font-family: Assistant;
-            font-size:20px;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Arimo|Assistant" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מג'יק דוג</title>
+  <meta name="description" content="תספורות מקצועיות לכלבים וחתולים">
+  <meta name="author" description="magic dog">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo|Assistant|Oxygen:400,300,700">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body style="direction: rtl; text-align: right;">
+  
+<div class="content">
+  <h1 class="content__heading">MAGIC DOG</h1>
+  <p class="content__teaser">תספורות מקצועיות לכלבים וחתולים</p>
+    <p class="content__teaser">חייגו עכשיו: 052-660-8277</p>
+  <div>
+  <a href="#" class="content__cta">פרטי הגעה</a>
+  <a href="#" class="content__cta">גלריה</a>
+  <a href="#" class="content__cta">מחירון</a>
+  </div>
+</div><!-- /content -->
 
-<body>
-    <div class="main-title">
-        <div>מג'יק דוג</div>
-        <div class="submain-title ">מספרת כלבים וחתולים</div>
-    </div>
-    <div class="center">
-        <div>שעות פתיחה</div>
-        <div>מחירים</div>
-        <div>גלריה</div>
-        <div>יצירת קשר</div>
-    </div>
-    <div class="footer">הזמינו תור עכשיו: 0542200364</div>
+<video id="my-video" class="video" muted loop>
+  <source src="media/Puppy.mp4" type="video/mp4">
+  <source src="media/Puppy.ogv" type="video/ogg">
+  <source src="media/Puppy.webm" type="video/webm">
+</video><!-- /video -->
+
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
 </body>
-
 </html>
