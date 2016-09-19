@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>מג'יק דוג</title>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://beaverslider.com/code/current/beaverslider.js"></script>
+	<script src="http://beaverslider.com/code/current/beaverslider-effects.js"></script>
+
+<script>
+	
+	$(function(){
+      var slider = new BeaverSlider({
+        structure: {
+          container: {
+            id: "my-slider",
+            width: 1200,
+            height: 420
+          }
+        },
+        content: {
+          images: [
+            "img/1.jpg",
+            "img/2.jpg"
+          ]
+        },
+        animation: {
+          effects: effectSets["slider: big set 2"],
+          interval: 1000
+        }
+      });   
+	});
+	
+	</script>
+</head>
+
+<body style="direction: rtl; text-align: right;">
+    <div style="width: 100%; font-size: 85px; font-family: arial; border-bottom: solid 1px black;">MAGIC DOG - מספרת כלבים</div>
+    <div style="height: 700px; width: 100%;">
+
+        <div id="my-slider"></div>
+
+    </div>
+    <div style="border-top: solid 1px black; text-align:center; font-size: 50px;">
+        <a href="contact.html" title="יצירת קשר">יצירת קשר</a>
+        <a href="about.html" title="">אודות</a>
+        <a href="gallery.html" title="">גלריה</a>
+        <div>חפשו אותנו:
+            <a href="https://www.facebook.com/%D7%9E%D7%92%D7%99%D7%A7-%D7%93%D7%95%D7%92-158156144611186/?fref=ts">
+                <image src="fb.png" style="height: 50px;" />
+            </a>
+            <a href="https://www.instagram.com/magicdog_p/">
+                <image src="instagram.jpg" style="height: 55px;" />
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
