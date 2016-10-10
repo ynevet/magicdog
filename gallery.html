@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
-        <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AABppgDGhf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAMzAAAAAAAAADAAAAAAAAIBAQIAAAAAIhEBEiAAAAIiEAASIgAAAiIRERIiAAACIgERAiIAAAIiABAAIgAAAiAQEBAiAAAAAAAQAAAAAAAAIBIAAAAAACIBESIAAAAAABEREAAAD//wAA//8AAP7/AAD8fwAA/H8AAPAfAADgDwAAwAcAAIADAACAAwAAgAMAAIADAACAAwAAAAEAAAABAAAAAQAA" rel="icon" type="image/x-icon" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AABppgDGhf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAMzAAAAAAAAADAAAAAAAAIBAQIAAAAAIhEBEiAAAAIiEAASIgAAAiIRERIiAAACIgERAiIAAAIiABAAIgAAAiAQEBAiAAAAAAAQAAAAAAAAIBIAAAAAACIBESIAAAAAABEREAAAD//wAA//8AAP7/AAD8fwAA/H8AAPAfAADgDwAAwAcAAIADAACAAwAAgAMAAIADAACAAwAAAAEAAAABAAAAAQAA"
+        rel="icon" type="image/x-icon" />
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/jssor.slider-21.1.5.mini.js" type="text/javascript"></script>
 
- <script type="text/javascript">
+    <script type="text/javascript">
         jQuery(document).ready(function ($) {
             
             var jssor_1_SlideshowTransitions = [
@@ -78,30 +79,39 @@
         });
         
     </script>
-        <style>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-85039442-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
         a.navigation-link {
             padding: 0px 20px;
             word-wrap: normal;
             display: inline-block;
             text-decoration: none;
         }
-                a {
-        color: #141823;
-    }
-    
-    a:visited {
-        color: #141823;
-    }
-    
-    a:hover {
-        color: blue;
-    }
-    
-    a:active {
-        color: blue;
-    }
-
-       /* jssor slider arrow navigator skin 05 css */
+        
+        a {
+            color: #141823;
+        }
+        
+        a:visited {
+            color: #141823;
+        }
+        
+        a:hover {
+            color: blue;
+        }
+        
+        a:active {
+            color: blue;
+        }
+        /* jssor slider arrow navigator skin 05 css */
         /*
         .jssora05l                  (normal)
         .jssora05r                  (normal)
@@ -110,7 +120,9 @@
         .jssora05l.jssora05ldn      (mousedown)
         .jssora05r.jssora05rdn      (mousedown)
         */
-        .jssora05l, .jssora05r {
+        
+        .jssora05l,
+        .jssora05r {
             display: block;
             position: absolute;
             /* size of arrow element */
@@ -120,13 +132,30 @@
             background: url('img/a17.png') no-repeat;
             overflow: hidden;
         }
-        .jssora05l { background-position: -10px -40px; }
-        .jssora05r { background-position: -70px -40px; }
-        .jssora05l:hover { background-position: -130px -40px; }
-        .jssora05r:hover { background-position: -190px -40px; }
-        .jssora05l.jssora05ldn { background-position: -250px -40px; }
-        .jssora05r.jssora05rdn { background-position: -310px -40px; }
         
+        .jssora05l {
+            background-position: -10px -40px;
+        }
+        
+        .jssora05r {
+            background-position: -70px -40px;
+        }
+        
+        .jssora05l:hover {
+            background-position: -130px -40px;
+        }
+        
+        .jssora05r:hover {
+            background-position: -190px -40px;
+        }
+        
+        .jssora05l.jssora05ldn {
+            background-position: -250px -40px;
+        }
+        
+        .jssora05r.jssora05rdn {
+            background-position: -310px -40px;
+        }
         /* jssor slider thumbnail navigator skin 01 css */
         /*
         .jssort01 .p            (normal)
@@ -134,6 +163,7 @@
         .jssort01 .p.pav        (active)
         .jssort01 .p.pdn        (mousedown)
         */
+        
         .jssort01 .p {
             position: absolute;
             top: 0;
@@ -199,100 +229,103 @@
             border: #000 2px solid;
         }
         
-        * html .jssort01 .c, * html .jssort01 .pdn .c, * html .jssort01 .pav .c {
+        * html .jssort01 .c,
+        * html .jssort01 .pdn .c,
+        * html .jssort01 .pav .c {
             /* ie quirks mode adjust */
-            width /**/: 72px;
-            height /**/: 72px;
+            width/**/
+            : 72px;
+            height/**/
+            : 72px;
         }
     </style>
 
 </head>
 
 <body style="direction: rtl; text-align: right;font-family: 'Suez One', serif; color: #141823;">
-    <div style="width: 100%; font-size: 75px; border-bottom: solid 1px black; text-align: center;">MAGIC DOG -  מספרת כלבים וחתולים</div>
+    <div style="width: 100%; font-size: 75px; border-bottom: solid 1px black; text-align: center;">MAGIC DOG - מספרת כלבים וחתולים</div>
     <div style="height: 700px; width: 100%; font-size: 50px;">
-
-<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-        </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/01.jpg" />
-                <img data-u="thumb" src="img/thumb-01.jpg" />
+        <span style="font-size: 50px;">גלריה</span>
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
             </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/02.jpg" />
-                <img data-u="thumb" src="img/thumb-02.jpg" />
-            </div>
-            <a data-u="any" href="http://www.jssor.com" style="display:none">Image Gallery</a>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/03.jpg" />
-                <img data-u="thumb" src="img/thumb-03.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/04.jpg" />
-                <img data-u="thumb" src="img/thumb-04.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/05.jpg" />
-                <img data-u="thumb" src="img/thumb-05.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/06.jpg" />
-                <img data-u="thumb" src="img/thumb-06.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/07.jpg" />
-                <img data-u="thumb" src="img/thumb-07.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/08.jpg" />
-                <img data-u="thumb" src="img/thumb-08.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/09.jpg" />
-                <img data-u="thumb" src="img/thumb-09.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/10.jpg" />
-                <img data-u="thumb" src="img/thumb-10.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/11.jpg" />
-                <img data-u="thumb" src="img/thumb-11.jpg" />
-            </div>
-            <div data-p="144.50" style="display: none;">
-                <img data-u="image" src="img/12.jpg" />
-                <img data-u="thumb" src="img/thumb-12.jpg" />
-            </div>
-        </div>
-        <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
-            <!-- Thumbnail Item Skin Begin -->
-            <div data-u="slides" style="cursor: default;">
-                <div data-u="prototype" class="p">
-                    <div class="w">
-                        <div data-u="thumbnailtemplate" class="t"></div>
-                    </div>
-                    <div class="c"></div>
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/01.jpg" />
+                    <img data-u="thumb" src="img/thumb-01.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/02.jpg" />
+                    <img data-u="thumb" src="img/thumb-02.jpg" />
+                </div>
+                <a data-u="any" href="http://www.jssor.com" style="display:none">Image Gallery</a>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/03.jpg" />
+                    <img data-u="thumb" src="img/thumb-03.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/04.jpg" />
+                    <img data-u="thumb" src="img/thumb-04.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/05.jpg" />
+                    <img data-u="thumb" src="img/thumb-05.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/06.jpg" />
+                    <img data-u="thumb" src="img/thumb-06.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/07.jpg" />
+                    <img data-u="thumb" src="img/thumb-07.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/08.jpg" />
+                    <img data-u="thumb" src="img/thumb-08.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/09.jpg" />
+                    <img data-u="thumb" src="img/thumb-09.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/10.jpg" />
+                    <img data-u="thumb" src="img/thumb-10.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/11.jpg" />
+                    <img data-u="thumb" src="img/thumb-11.jpg" />
+                </div>
+                <div data-p="144.50" style="display: none;">
+                    <img data-u="image" src="img/12.jpg" />
+                    <img data-u="thumb" src="img/thumb-12.jpg" />
                 </div>
             </div>
-            <!-- Thumbnail Item Skin End -->
+            <!-- Thumbnail Navigator -->
+            <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+                <!-- Thumbnail Item Skin Begin -->
+                <div data-u="slides" style="cursor: default;">
+                    <div data-u="prototype" class="p">
+                        <div class="w">
+                            <div data-u="thumbnailtemplate" class="t"></div>
+                        </div>
+                        <div class="c"></div>
+                    </div>
+                </div>
+                <!-- Thumbnail Item Skin End -->
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+            <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
         </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
-        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
-    </div>
 
     </div>
     <div style="border-top: solid 1px black; text-align:center; font-size: 40px; font-size: 40px;">
         <a href="index.html" class="navigation-link" title="דף הבית">דף הבית</a>
         <a href="contact.html" class="navigation-link" title="">יצירת קשר</a>
         <a href="about.html" class="navigation-link" title="">אודות</a>
-        <a href="gallery.html" class="navigation-link" title="">גלריה</a>
         <div style=" font-size: 30px;">חפשו אותנו:
             <a href="https://www.facebook.com/%D7%9E%D7%92%D7%99%D7%A7-%D7%93%D7%95%D7%92-158156144611186/?fref=ts" title="מג'יק דוג בפייסבוק"><image src="fb.png" style="height: 50px;" /></a>
             <a href="https://www.instagram.com/magicdog_p/" title="מג'יק דוג באינסטגרם"><image src="instagram.jpg" style="height: 50px;" /></a>
