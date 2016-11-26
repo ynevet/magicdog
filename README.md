@@ -1,2 +1,2 @@
-# hairdressing
-The ultimate place for your dog's beauty
+# MagicDog
+##source-code of http://www.magicdog.co.il
